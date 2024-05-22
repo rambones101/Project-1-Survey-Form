@@ -1,0 +1,119 @@
+body {
+    /* Body styling */
+    font-family: 'Roboto', sans-serif; 
+    background-image: url('https://media-api.xogrp.com/images/a5130a27-5265-4da2-9e2d-1bc62cbf7ac8'); /* Full-screen background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50; 
+}
+
+#title {
+    /* Title styling */
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2em; 
+}
+
+p {
+    /* Paragraph styling */
+    text-align: center;
+    color: #ffffff; 
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 15px;
+    margin: 20px 50px; 
+    border-radius: 5px;
+    font-size: 1.2em; 
+}
+
+#survey-form {
+    /* Form styling */
+    max-width: 600px;
+    margin: 50px auto; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25); 
+}
+
+fieldset {
+    /* Fieldset styling */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px; 
+}
+
+legend {
+    /* Legend styling */
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.2em; 
+}
+
+label {
+    /* Label styling */
+    display: block;
+    margin-bottom: 10px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    /* Input field styling */
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    /* Checkbox and radio button styling */
+    margin-right: 10px; 
+}
+
+input[type="submit"] {
+    /* Submit button styling */
+    background-color: #3498db; 
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    /* Submit button hover styling */
+    background-color: #2874a6; 
+}
+
+textarea {
+    /* Textarea styling */
+    resize: vertical; 
+}
+
+/* Ensure responsive design */
+@media (max-width: 600px) {
+    #survey-form {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Add focus states for accessibility */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}

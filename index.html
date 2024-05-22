@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Project 180 Survey Form</h1>
+    <p id="description">Please give your thoughts on Project 180 social events.</p>
+    <form id="survey-form" method="post" action="/submit-form">
+        <fieldset>
+            <label for="name" id="name-label">Enter Your Full Name:</label>
+            <input id="name" name="name" type="text" placeholder="John Doe" required aria-label="Full Name">
+
+            <label for="email" id="email-label">Enter Your Email:</label>
+            <input id="email" name="email" type="email" placeholder="example@example.com" required aria-label="Email">
+
+            <label for="age" id="number-label">Enter your Age:</label>
+            <input id="number" name="age" type="number" min="18" max="30" placeholder="25" required aria-label="Age">
+        </fieldset>
+
+        <fieldset>
+            <label for="rating">On a scale of 1-5, how would you rate our parties?</label>
+            <select id="dropdown" name="rating" required aria-label="Rating">
+                <option value="">(select one)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="party-theme">What would you like the next party theme to be?</label>
+            <select id="party-theme" name="party-theme" required aria-label="Party Theme">
+                <option value="">(select one)</option>
+                <option value="Costume Party">Costume Party</option>
+                <option value="Beach Party">Beach Party</option>
+                <option value="Hawaiian Luau">Hawaiian Luau</option>
+                <option value="Ski Theme">Ski Theme</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Music at Parties</legend>
+            <label><input type="checkbox" name="music" value="Rap"> Rap</label>
+            <label><input type="checkbox" name="music" value="RnB"> RnB</label>
+            <label><input type="checkbox" name="music" value="EDM"> EDM</label>
+            <label><input type="checkbox" name="music" value="Pop"> Pop</label>
+            <label><input type="checkbox" name="music" value="Reggaeton"> Reggaeton</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Would you recommend Project 180 to a friend?</legend>
+            <label for="yes"><input id="yes" type="radio" name="answer-type" value="yes" checked> Yes</label>
+            <label for="maybe"><input id="maybe" type="radio" name="answer-type" value="maybe"> Maybe</label>
+            <label for="no"><input id="no" type="radio" name="answer-type" value="no"> No</label>
+
+            <label for="Comments">Any additional suggestions?</label>
+            <textarea id="Comments" name="Comments" rows="3" cols="30" placeholder="blah blah blah" aria-label="Additional Comments"></textarea>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
